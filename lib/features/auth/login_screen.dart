@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vietjet/payment_screen.dart';
+import 'package:vietjet_sdk/features/payment/payment_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   final String url;
@@ -61,11 +61,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
             ),
-
+            const SizedBox(
+              height: 20,
+            ),
             Center(
               child: InkWell(
                 onTap: () {
-                   Navigator.pushNamed(context, PaymentScreen.routePath);
+                  Navigator.pushNamed(context, PaymentScreen.routePath);
                 },
                 child: Container(
                   width: 200,
@@ -84,6 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
     );
   }
+
   @override
   void dispose() {
     ctEmail.dispose();

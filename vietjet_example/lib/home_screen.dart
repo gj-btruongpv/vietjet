@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vietjet/login_screen.dart';
+import 'package:vietjet/features/auth/login_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

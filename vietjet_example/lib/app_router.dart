@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vietjet/login_screen.dart';
-import 'package:vietjet/payment_screen.dart';
+import 'package:vietjet/vietjet.dart';
+
 
 class AppRouter {
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
