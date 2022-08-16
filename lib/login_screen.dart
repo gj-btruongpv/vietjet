@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vietjet/payment_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   final String url;
@@ -55,6 +56,24 @@ class _LoginScreenState extends State<LoginScreen> {
                   alignment: Alignment.center,
                   child: const Text(
                     'Login',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
+            ),
+
+            Center(
+              child: InkWell(
+                onTap: () {
+                   Navigator.pushNamed(context, PaymentScreen.routePath);
+                },
+                child: Container(
+                  width: 200,
+                  height: 48,
+                  color: Colors.blue,
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'Payment',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
