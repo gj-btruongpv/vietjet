@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vietjet/vietjet_router.dart';
+import 'package:vietjet_sdk/vietjet_router.dart';
 
 class AppRouter {
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();

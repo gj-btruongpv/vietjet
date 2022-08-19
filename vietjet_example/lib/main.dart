@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:vietjet_example/app_router.dart';
-import 'package:vietjet_example/home_screen.dart';
+import 'package:vietjet_sdk/vietjet.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      routes: AppRouter.registerRoutes(),
-      home: const HomeScreen()
+       onGenerateRoute: AppVietJetRouter.registerRoutes,
+       home: const VietjetScreen()
     );
   }
 }
