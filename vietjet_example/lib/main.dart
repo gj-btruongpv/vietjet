@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:vietjet_example/app_router.dart';
+import 'package:vietjet_sdk/features/login_vietjet_screen.dart';
 import 'package:vietjet_sdk/vietjet.dart';
 
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
        onGenerateRoute: AppVietJetRouter.registerRoutes,
-       home: const VietjetScreen()
+       initialRoute: VJLoginScreen.routePath,
     );
   }
 }
