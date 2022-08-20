@@ -17,7 +17,7 @@ class VJLoginScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, VietjetScreen.routePath);
               },
-              child: Text('Vietjet')),
+              child: Text('Go to Vietjet')),
         ));
   }
 }

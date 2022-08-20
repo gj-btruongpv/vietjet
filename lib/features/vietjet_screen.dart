@@ -11,7 +11,7 @@ class VietjetScreen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.red,
-          title: const Text('Vietjet'),
+          title: const Text('Wellcome ietjet'),
           actions: [
             IconButton(
                 onPressed: () {
