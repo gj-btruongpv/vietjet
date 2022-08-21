@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:payment_sdk/home_screen.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 class VietjetScreen extends StatelessWidget {
@@ -10,15 +9,13 @@ class VietjetScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          leading: BackButton(
+            onPressed: () {
+              Navigator.pushNamedAndRemoveUntil(context, '/gj/tab', (route) => false);
+            },
+          ),
           backgroundColor: Colors.red,
-          title: const Text('Wellcome ietjet'),
-          actions: [
-            IconButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, HomePaymentScreen.routePath);
-                },
-                icon: Icon(Icons.payment))
-          ],
+          title: const Text('Wellcome Vietjet'),
         ),
         body: WebView(
           javascriptMode: JavascriptMode.unrestricted,
